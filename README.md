@@ -1,44 +1,15 @@
-<h1 align="center">Wayne Gregory (Zeropointbruh)</h1>
+<div align="center">
+<br><br><br><br>
 
-<p align="center">
-  <a href="https://github.com/ZEROPOINTBRUH">
-    <img src="https://img.shields.io/github/followers/ZEROPOINTBRUH?label=Follow&style=social" alt="GitHub followers">
-  </a>
+<h2>How did we get here?</h2>
+
+<p>
+  <img src="https://gifdb.com/images/high/galaga-classic-capture-dodge-nc5unhj86my0uv4u.gif" alt="Galaga Gameplay" width="500"/>
 </p>
 
-<p align="center">
-  <a href="mailto:wegj1@banabyte.com">Email</a> • 
-  <a href="https://github.com/ZEROPOINTBRUH">GitHub</a> • 
-  <a href="https://banabyte.com">Website</a> • 
-  <a href="https://radio.banabyte.com">Radio</a> • 
-  <a href="https://discord.banabyte.com">Discord</a>
-</p>
+<hr>
 
----
+<p>Hi</p>
 
-## 👋 About Me
-
-I'm Wayne Gregory Jr III — also known online as Zeropointbruh. I specialize in infrastructure, automation, and backend systems. I run **Banabyte LLC**, a tech platform offering services ranging from web hosting to online radio.
-
-Whether it’s designing server environments or building out internal tools, I’m focused on stable, scalable, and self-hosted solutions.
-
----
-
-## 🏢 Business Info
-
-- **Business Name:** Banabyte LLC  
-- **Business Number:** 20241275576  
-- **Website:** [banabyte.com](https://banabyte.com)
-
----
-
-## 📬 Contact
-
-Interested in collaborating, pitching a project, or just want to chat tech?  
-Shoot me a message at [wegj1@hotmail.com](mailto:wegj1@hotmail.com)
-
----
-
-## 🎙️ Fun Fact
-
-**Shorks are awesome.** Enough said.
+<br><br><br><br>
+</div>
