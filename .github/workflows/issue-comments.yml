@@ -1,0 +1,59 @@
+name: Update README with Issues
+
+on:
+  issues:
+    types: [opened]
+  workflow_dispatch: # Allows you to run it manually
+
+permissions:
+  issues: read
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Generate Issue List
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const readmePath = './README.md';
+            let readmeContent = fs.readFileSync(readmePath, 'utf8');
+
+            const response = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'comment', // Optional: Only use issues with a 'comment' label
+              per_page: 10,
+              sort: 'created',
+              direction: 'desc'
+            });
+
+            const issues = response.data;
+            let issueList = '';
+            for (const issue of issues) {
+              const user = issue.user.login;
+              const url = issue.html_url;
+              const title = issue.title;
+              const date = new Date(issue.created_at).toLocaleDateDateString('en-US');
+
+              issueList += `\n> **[${user}](${issue.user.html_url})** on _${date}_\n>\n> **${title}**\n\n`;
+            }
+
+            const startTag = '';
+            const endTag = '';
+            const regex = new RegExp(`${startTag}[\\s\\S]*${endTag}`);
+            const newReadme = readmeContent.replace(regex, `${startTag}\n${issueList}\n${endTag}`);
+
+            fs.writeFileSync(readmePath, newReadme);
+
+      - name: Commit and Push Changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Chore: Update README with new issue comments"
+          file_pattern: "README.md"
