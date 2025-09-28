@@ -1,15 +1,8 @@
 <div align="center">
-<br><br><br><br>
+<a href="https://github.com/ashutosh00710/github-readme-activity-graph">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=zeropointbruh&bg_color=02040A&color=00B4D8&line=0077B6&point=FFFFFF&area=true&hide_border=true" />
+</a>
 
-<h2>How did we get here?</h2>
+<img src="https://komarev.com/ghpvc/?username=zeropointbruh&label=VIEWS&color=007ACC&style=for-the-badge" alt="Profile views" />
 
-<p>
-  <img src="https://gifdb.com/images/high/galaga-classic-capture-dodge-nc5unhj86my0uv4u.gif" alt="Galaga Gameplay" width="500"/>
-</p>
-
-<hr>
-
-<p>Hi</p>
-
-<br><br><br><br>
 </div>
